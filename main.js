@@ -13,9 +13,9 @@ class Tarea {
     }
 }
 const añadirTarea = () => {
-    // let verificadorDeEspacios = input.value.trim();
+    let verificadorDeEspacios = input.value.trim();
 
-    // if (verificadorDeEspacios != "") {
+    if (verificadorDeEspacios != "") {
     // const tareaNueva = new Tarea();
     const tareaNueva = new Tarea();
     let tiempo = time.value;
@@ -29,7 +29,7 @@ const añadirTarea = () => {
     input.value = ""
     time.value = ""
     date.value = ""
-    // }
+    }
 }
 
 const agregarTarea = button.addEventListener("click", añadirTarea)
